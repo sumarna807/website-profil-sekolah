@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #172b46;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.navbar h2 {
+    .navbar {
+        width: 100%;
+        height: 70px;
+        background-color: #172b46;
+        color: white;
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    
+    .navbar h2 {
+        font-size: 20px;
+        margin: 0;
+    }
+    
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    
+    .nav-links a:hover {
+        color: #3498db;
+    }
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color: #3498db;
+}
+
+/* Bagian utama */
+main {
+    flex: 1;
+}
+
+section {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+hr {
+    width: 350px;
+    margin: 10px 0 25px;
+    border: 1px solid #ddd;
+}
+
+/* Kartu profil */
+.profile-card {
+    width: 350px;
+    background-color: #d8d1d4;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Foto profil */
+.avatar-box {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Nama dan deskripsi */
+.name {
+    font-size: 23px;
+    color: #26334a;
+    margin-top: 15px;
+}
+
+.role {
+    font-size: 16px;
+    color: #444;
+}
+
+.bio {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Skill */
+.skills {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.badge-skill {
+    background-color: #eef5f8;
+    color: #3498db;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* Tombol */
+.btn-contact {
+    width: 100%;
+    padding: 12px;
+    background-color: #249fe0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-contact:hover {
+    background-color: #1685c0;
+}
+
+/* Footer */
+footer {
+    background-color: #172b46;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+}
+
+/* Tampilan HP */
+@media (max-width: 500px) {
+    .navbar {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .navbar h2 {
+        font-size: 18px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .profile-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
